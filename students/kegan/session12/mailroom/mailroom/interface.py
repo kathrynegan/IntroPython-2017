@@ -10,8 +10,8 @@ kittens.
 import os
 import sys
 from mailroom import datafile
-from tools import Donor
-from tools import DonorList
+from mailroom.donor import Donor
+from mailroom.donor_list import DonorList
 
 
 donors = {
@@ -22,8 +22,8 @@ donors = {
     'Billy Neighbor': [.54, .01, .25]}
 DONORS = DonorList.from_dictionary(donors)
 
-with open(datafile, 'r') as fin:
-    DONORS = DonorList.read_from(fin)
+# with open(datafile, 'r') as fin:
+#     DONORS = DonorList.read_from(fin)
 
 
 def main():
@@ -210,7 +210,3 @@ def donors_to_file():
         DONORS.write_to(outfile)
     print('Donor file written to\n{}'.format(
         os.path.join(os.getcwd(), filename)))
-
-
-if __name__ == '__main__':
-    main()

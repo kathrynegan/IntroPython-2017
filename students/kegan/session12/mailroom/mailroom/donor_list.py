@@ -2,6 +2,7 @@
 Kathryn Egan
 """
 import functools
+from mailroom.donor import Donor
 
 
 @functools.total_ordering
