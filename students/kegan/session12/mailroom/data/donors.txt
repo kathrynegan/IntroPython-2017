@@ -1,0 +1,5 @@
+Benedict Cumberbatch,200000.00
+Elon Musk,10000.00,150000.00,100000.00
+Dad,20.00,5.00
+Donald Trump,2.81
+Billy Neighbor,0.54,0.01,0.25
